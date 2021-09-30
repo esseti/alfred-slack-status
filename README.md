@@ -17,8 +17,11 @@ Then in Alfred do the following:
 
 # Usage:
 
-List of commands
+
 ![Usage screenshot](doc/commands.png)
+
+
+List of commands:
 
 - `ssbrb`: set status as BRB: asks for DND and to Close Slack
 - `ssfocus`: Focus  asks for DND and to Close Slack
