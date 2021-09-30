@@ -2,7 +2,7 @@ This workflow allows you to set your slack status via Alfred.
 
 It has pre-defined set of statuses, but by modifying the workflow you can add yours.
 
-#Setup
+# Setup
 Since Slack has changed auth flow, you have to add this app to your Slack and perform an Oauth Login 
 
 <a href="https://slack.com/oauth/v2/authorize?client_id=3091729876.2525836761175&scope=&user_scope=users.profile:write,dnd:write,users:write"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcSet="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
@@ -15,7 +15,8 @@ Then in Alfred do the following:
 - run `sssetup` but select "paste token" and add the token as parameter of that action
 - a notification that token has been saved is shown.
 
-#Usage:
+# Usage:
+
 List of commands
 ![Usage screenshot](doc/commands.png)
 
