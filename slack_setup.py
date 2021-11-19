@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 import sys
+sys.path.append("./lib")
 from workflow import Workflow, ICON_WARNING, ICON_INFO, web, Variables
 import os
 import datetime

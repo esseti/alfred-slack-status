@@ -1,6 +1,7 @@
 # encoding: utf-8
 
 import sys
+sys.path.append("./lib")
 from workflow import Workflow, ICON_WEB, ICON_WARNING, web, Variables, \
     PasswordNotFound
 import os
@@ -57,7 +58,10 @@ def main(wf):
                'Please use `sssetup` to set your Slack token.')
         print(Variables(u'arg', FAILED=1))
         return 1
-    auth = {'Authorization': 'Bearer %s' % wf.get_password('slack_token')}
+    auth = {
+        'Authorization': 'Bearer %s' % wf.get_password('slack_token'),
+        'Content-Type': 'application/json; charset=UTF-8'
+    }
     res = requests.post('https://slack.com/api/users.profile.set', json=data,
                         headers=auth)
     if not res.json()['ok']:
